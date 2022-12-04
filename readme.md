@@ -1,4 +1,7 @@
-# Explaining files
+
+# Code and data for our Figlang@EMNLP2022 paper: The Secret of Metaphor on Expressing Stronger Emotion
+
+## Explaining data files
 
 `specificity.tsv` annotates **which is more specific? metaphor or literal.**
 
@@ -13,4 +16,11 @@
 
 `more_specific_terms.tsv` annotates **which is more emotional? literal or more specific literal.**
 
-details to be release.
+- The `substitute` column is the manual chosen more specific literal term.
+- The `emotional` column indicates whether the chosen more specific literal term is more emotional than the original literal one. `2` means the original literal is more emotional; `1` means the more specific literal is more emotioanl; and `0` means they share the same level specificity.
+
+## Expalining code files
+
+`wordnet_level.py` locate terms in the wordnet hierarchy.
+
+`specificity_emotion.py` produce terms in the same/lower level specificity in the wordnet hierarchy.
